@@ -10,7 +10,7 @@ export default function User({ details }) {
             <h2>{details.name}</h2>
             <p>Email: {details.email}</p>
             <p>Passowrd: {details.password}</p>
-            <p>Terms of Service: {details.tos}</p>
+            <p>Terms of Service: {details.terms}</p>
         </div>
     )
 
