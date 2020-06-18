@@ -31,6 +31,7 @@ function App() {
   const [formErrors, setFormErrors] = useState(initialFormErrors) 
   const [disabled, setDisabled] = useState(initialDisabled)  
 
+  const resetForm = () => setFormValues(initialFormValues)
 
   const onInputChange = evt => {
     const { name, value } = evt.target
@@ -80,7 +81,8 @@ function App() {
         ]);
         console.log("success", res);
       })
-      .catch(err => console.log(err.response));
+      .catch(err => console.log(err.response))
+      .finally(resetForm)
   };
 
   useEffect(() => {
@@ -103,7 +105,7 @@ function App() {
         errors={formErrors}
       />
       {
-        post.map(user => <User details={user} />)
+        post.map(user => <User key={user.password} details={user} />)
       }
 
     </div>

@@ -17,7 +17,7 @@ export default function Form(props) {
 
                 <label>Name:&nbsp;
                     <input
-                        type='text'
+                        type='name'
                         name='name'
                         value={values.name}
                         onChange={onInputChange}
@@ -63,7 +63,7 @@ export default function Form(props) {
             </div>
 
             <div className='form-group submit'>
-                <button disabled={disabled}>Sign up!</button>
+                <button id='submitBtn' disabled={disabled}>Sign up!</button>
 
                 <div className='errors'>
                     <div>{errors.name}</div>
