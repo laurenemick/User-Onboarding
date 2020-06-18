@@ -13,7 +13,7 @@ export default function Form(props) {
     return (
         <form className='form container' onSubmit={onSubmit}>
             <div className='form-group inputs'>
-                <h4>New User Information</h4>
+                <h2>New User Information</h2>
 
                 <label>Name:&nbsp;
                     <input
@@ -55,7 +55,7 @@ export default function Form(props) {
                         type="checkbox" 
                         name="terms" 
                         onChange={onCheckboxChange}
-                        checked={values.term}
+                        checked={values.terms}
                     />
                 </label>
                 <br />

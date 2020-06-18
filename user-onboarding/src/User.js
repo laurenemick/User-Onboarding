@@ -7,10 +7,10 @@ export default function User({ details }) {
 
     return (
         <div className='user container'>
-            <h2>{details.name}</h2>
+            <h3>{details.name}</h3>
             <p>Email: {details.email}</p>
             <p>Password: {details.password}</p>
-            <p>Terms of Service: {details.terms}</p>
+            <p>Terms of Service: Accepted</p>
         </div>
     )
 
