@@ -11,6 +11,7 @@ const initialFormValues = {
   name: '',
   email: '',
   password: '',
+  role: '',
   /// Checkbox ///
   terms: false,
 }
@@ -19,6 +20,7 @@ const initialFormErrors = {
   name: '',
   email: '',
   password: '',
+  role: '',
   terms: false,
 }
 

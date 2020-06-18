@@ -48,6 +48,24 @@ export default function Form(props) {
                 </label>
                 <br />
                 <br />
+                <label>Role:&nbsp;
+                    <select
+                        name='role'
+                        value={values.role}
+                        onChange={onInputChange}
+                    >
+                        <option value=''>- Select an option -</option>
+                        <option value='Sales Intern'>Sales Intern</option>
+                        <option value='Marketing Intern'>Marketing Intern</option>
+                        <option value='Business Development Representative'>Business Development Representative</option>
+                        <option value='Account Executive'>Account Executive</option>
+                        <option value='Sr. Account Executive'>Sr. Account Executive</option>
+                        <option value='Marketing Coordinator'>Marketing Coordinator</option>
+                        <option value='Customer Success Manager'>Customer Success Manager</option>
+                    </select>
+                </label>
+                <br />
+                <br />
                 <label htmlFor="termsInput">
                     Do you agree to the terms and conditions?
                     <input 
